@@ -10,7 +10,7 @@ h = cleanTime(h);
 m = cleanTime(m);
 s = cleanTime(s);
 
-document.body.innerHTML = h + ":" + m + ":" + s + " " + amPm;
+document.body.innerHTML = "<h1>" + h + ":" + m + ":" + s + " " + amPm + "</h1>";
 
 function cleanTime (time){
     if (time < 10)
