@@ -11,7 +11,7 @@ function getTime(){
     m = cleanTime(m);
     s = cleanTime(s);
     
-    document.getElementById('time').innerHTML = "<h1>" + h + ":" + m + ":" + s + " " + amPm + "</h1>";
+    document.getElementById('time').innerHTML = "<h1>" + h%12 + ":" + m + ":" + s + " " + amPm + "</h1>";
 
     var t = setTimeout(getTime, 500);
     
